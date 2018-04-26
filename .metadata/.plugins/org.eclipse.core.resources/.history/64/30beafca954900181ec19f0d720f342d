@@ -1,0 +1,21 @@
+package metier;
+
+public class NoteTDD {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static String note (int a, int b) {
+		return "";
+	}
+	
+	public static String note (String a, String b) {
+		return "";
+	}
+
+}

@@ -1,0 +1,36 @@
+package test;
+import org.junit.Test;
+
+import junit.framework.TestCase;
+
+public class notationTest extends TestCase {
+
+	@Test
+	public static void testA() {
+		
+		assertEquals("A", metier.Notation.note(75, 25));
+	}
+	
+	@Test
+	public static void testB(){
+
+		assertEquals("B", metier.Notation.note(50, 10));
+	}
+	@Test
+	public static void testC(){
+
+		assertEquals("C", metier.Notation.note(35, 10));
+	}
+	@Test
+	public static void testD(){
+
+		assertEquals("D", metier.Notation.note(0, 25));
+	}
+	
+	@Test
+	public static void testNegative() {
+
+		assertEquals("D", metier.Notation.note(75, 25));
+	}
+
+}

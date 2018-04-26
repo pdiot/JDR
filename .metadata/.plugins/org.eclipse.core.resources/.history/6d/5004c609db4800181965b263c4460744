@@ -1,0 +1,111 @@
+import java.util.Scanner;
+
+
+public class Notation {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Scanner s;
+		String examIn, ccIn;
+		int exam, cc;
+		
+		while (true) {
+			try {
+				System.out.println("Entrer la note d'examen");
+				s = new Scanner(System.in);
+				examIn = s.nextLine();
+				exam = Integer.parseInt(examIn);
+
+				System.out.println("Entrer la note de contrôle continu");
+				s = new Scanner(System.in);
+				ccIn = s.nextLine();
+				cc = Integer.parseInt(ccIn);
+				
+				if (exam > 75 || exam < 0){
+					throw new NumberFormatException("La note d'examen doit être comprise entre 0 et 75");
+				}
+				if (cc > 25 || cc < 0) {
+					throw new NumberFormatException("La note de contrôle continu doit être comprise entre 0 et 25");
+				}
+				
+				
+				
+			}
+			catch (NumberFormatException nfe) {
+				System.out.println("Erreur dans l'entée : " + nfe.getMessage());
+			}
+			catch (Exception e) {
+				System.out.println("Erreur non géree : " + e.getMessage());
+			}
+		}
+		
+		
+		
+		
+	}
+	
+	public static String note(int exam, int cc) {
+		
+		int sum = exam + cc;
+		
+		if (sum < 30) {
+			return "D";
+		} else if (sum >=30 && sum < 50){
+			return "C";
+		} else if (sum >=50 && sum < 70) {
+			return "B";
+		} else {
+			return "A";
+		}
+	
+	}
+	/*
+	public static void note() {
+		
+		Scanner s;
+		String examIn, ccIn;
+		int exam, cc;
+		try {
+			System.out.println("Entrer la note d'examen");
+			s = new Scanner(System.in);
+			examIn = s.nextLine();
+			exam = Integer.parseInt(examIn);
+			System.out.println("Entrer la note de Contrôle Continu");
+			s = new Scanner(System.in);
+			ccIn = s.nextLine();
+			cc = Integer.parseInt(ccIn);
+			if (exam > 75 || exam < 0){
+				throw new NumberFormatException("La note d'examen doit être comprise entre 0 et 75");
+			}
+			if (cc > 25 || cc < 0) {
+				throw new NumberFormatException("La note de contrôle continu doit être comprise entre 0 et 25");
+			}
+			
+			int sum = exam + cc;
+		
+			if (sum < 30) {
+				System.out.println("D");
+			} else if (sum >=30 && sum < 50){
+				System.out.println("C");
+			} else if (sum >=50 && sum < 70) {
+				System.out.println("B");
+			} else {
+				System.out.println("A");
+			}
+			
+		}
+		catch (NumberFormatException nfe) {
+			 System.out.println("Erreur dans l'entrée : " + nfe.getMessage());
+		}
+	}*/
+	
+	
+	
+	
+	
+	
+
+}

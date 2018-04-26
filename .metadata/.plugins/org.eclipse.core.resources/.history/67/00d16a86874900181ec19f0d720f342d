@@ -1,0 +1,19 @@
+package test;
+import org.junit.Test;
+
+import junit.framework.TestCase;
+
+public class notationTest extends TestCase {
+
+	@Test
+	public static void test() {
+		
+		// TODO Auto-generated method stub
+		assertEquals("A", metier.Notation.note(75, 25));
+		assertEquals("B", metier.Notation.note(50, 10));
+		assertEquals("C", metier.Notation.note(45, 10));
+		assertEquals("D", metier.Notation.note(0, 25));
+		
+	}
+
+}

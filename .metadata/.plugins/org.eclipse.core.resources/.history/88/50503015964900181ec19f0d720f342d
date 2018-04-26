@@ -1,0 +1,63 @@
+package metier;
+
+public class NoteTDD {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static String note(int exam, int cc) {
+		// les notes sont vérifiées et validées avant l'appel de la fonction
+		int sum = exam + cc;
+		if (exam < 0 || exam > 75) { // On sort de la fonction si on est en dehors de la plage d'entrées valides
+			return "Erreur dans exam";
+		} 
+		else if (cc < 0 || cc > 25) {
+			return "Erreur dans cc";
+		}
+		else {
+			if (sum < 30) {
+				return "D";
+			} else if (sum >=30 && sum < 50){
+				return "C";
+			} else if (sum >=50 && sum < 70) {
+				return "B";
+			} else {
+				return "A";
+			}
+		}
+	
+	}
+	
+	public static String note(String examIn, String ccIn) {
+		// les notes sont vérifiées et validées avant l'appel de la fonction
+		int exam, cc;
+		try {
+			
+			exam = Integer.parseInt(examIn);
+			cc = Integer.parseInt(ccIn);
+			
+			int sum = exam + cc;
+			
+			if (sum < 30) {
+				return "D";
+			} else if (sum >=30 && sum < 50){
+				return "C";
+			} else if (sum >=50 && sum < 70) {
+				return "B";
+			} else {
+				return "A";
+			}
+		}
+		catch (NumberFormatException nfe) {
+			return "Erreur dans l'entrée : " + nfe.getMessage();
+		}
+		
+	
+	}
+
+}

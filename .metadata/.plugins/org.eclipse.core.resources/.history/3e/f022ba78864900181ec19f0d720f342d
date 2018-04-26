@@ -1,0 +1,16 @@
+package test;
+
+import junit.framework.TestCase;
+
+public class notationTest extends TestCase {
+
+	/**
+	 * @param args
+	 */
+	public static void test() {
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,18 @@
+!SESSION 2018-04-23 14:05:21.740 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-04-23 14:05:23.271
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2018-04-26 12:15:07.943 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.touchpoint.natives 2 0 2018-04-26 14:23:06.478
+!MESSAGE Could not remove temporary backup directory (it is safe to manually delete it and its contents): C:\Users\ADMINI~1\AppData\Local\Temp\SDKProfile_2c607ad25540_c0a8cd6cc7cc
